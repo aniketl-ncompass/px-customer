@@ -1,0 +1,149 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+  height: 100%;
+}
+
+.logo {
+  max-height: 50px;
+  max-width: 120px;
+}
+
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  max-width: 35px;
+  max-height: 35px;
+}
+.icon.small {
+  width: 24px;
+  height: 24px;
+  max-width: 24px;
+  max-height: 24px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+}
+
+.addCustButton {
+  border-radius: 50% !important;
+  padding: 6px !important;
+  max-width: 45px !important;
+  max-height: 45px !important;
+  min-width: 45px !important;
+  min-height: 45px !important ;
+}
+
+.modalOuterWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.modalWrapper {
+  padding: 16px 32px 24px !important;
+}
+
+.addCustomerModal {
+  padding: 16px 0 !important;
+  gap: 1rem !important;
+  width: 800px !important;
+}
+
+.modalWrapper,
+.addCustomerModal {
+  position: absolute !important;
+  min-width: 350px !important;
+  max-width: 800px !important;
+  min-height: 80px !important;
+  height: fit-content !important;
+  background-color: white !important;
+  border: none !important;
+  border-radius: 7px !important;
+  flex-direction: column !important;
+  display: flex !important;
+}
+
+.addCustomerModal .customerFields {
+  max-height: 450px !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 10px;
+}
+
+.applyRemoveTagsModal {
+  max-width: 500px !important;
+  padding: 32px 25px !important;
+}
+
+.logoutWrapper {
+  min-width: 150px !important;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-radius: 2px !important;
+  padding: 10px 20px 20px 20px !important;
+}
+
+.ag-cell:first-child {
+  padding: 0 0px 0 10px !important;
+}
+
+.ag-header-cell,
+.ag-root-wrapper {
+  border-radius: 0 !important;
+  border: none !important;
+  background-color: white !important;
+}
+
+.ag-header-cell.ag-column-first {
+  padding-left: 2.5rem !important;
+}
+
+.ag-row {
+  min-height: 49px;
+  height: max-content;
+}
+
+.ag-row #shareIcon {
+  display: none;
+  padding: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.ag-row:hover #shareIcon {
+  display: flex;
+}
+
+.ag-row #shareIcon svg {
+  fill: #1976d2 !important;
+}
+
+#shareIcon:hover svg {
+  fill: black !important;
+}
+
+@media (max-width: 600px) {
+  .addCustomerModal,
+  .modalWrapper {
+    width: 80% !important;
+    min-width: 80% !important;
+    max-width: 80% !important;
+  }
+  .modalWrapper{
+    padding: 16px 18px !important;
+  }
+}
